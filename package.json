@@ -1,0 +1,65 @@
+{
+  "name": "new-file-types-in-split-window",
+  "displayName": "New File Types In Split Window",
+  "description": "Adds shortcuts to open new file types in a split window",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": [
+    "onCommand:extension.newArduinoFile",
+    "onCommand:extension.newPythonFile",
+    "onCommand:extension.newHtmlFile"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.newArduinoFile",
+        "title": "New Arduino File"
+      },
+      {
+        "command": "extension.newPythonFile",
+        "title": "New Python File"
+      },
+      {
+        "command": "extension.newHtmlFile",
+        "title": "New HTML File"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "extension.newArduinoFile",
+        "key": "ctrl+alt+a",
+        "mac": "ctrl+cmd+a"
+      },
+      {
+        "command": "extension.newPythonFile",
+        "key": "ctrl+alt+p",
+        "mac": "ctrl+cmd+p"
+      },
+      {
+        "command": "extension.newHtmlFile",
+        "key": "ctrl+alt+h",
+        "mac": "ctrl+cmd+h"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "npm run compile && node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "typescript": "^3.8.3",
+    "vscode": "^1.1.37",
+    "tslint": "^5.12.1",
+    "eslint": "^6.1.0",
+    "@types/node": "^12.11.1",
+    "@types/mocha": "^7.0.2",
+    "vscode-test": "^1.3.0"
+  }
+}
