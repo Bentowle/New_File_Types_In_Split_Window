@@ -3,7 +3,7 @@
   "displayName": "New File Types In Split Window",
   "description": "Adds shortcuts to open new file types in a split window",
   "version": "0.0.1",
-  "publisher": "(lowend)",
+  "publisher": "lowend",
   "repository": {
     "type": "git",
     "url": "https://github.com/Bentowle/New_File_Types_In_Split_Window"
@@ -17,7 +17,7 @@
     "onCommand:extension.newPythonFile",
     "onCommand:extension.newHtmlFile"
   ],
-  "main": "./extension.js",
+  "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
