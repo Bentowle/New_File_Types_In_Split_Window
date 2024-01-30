@@ -2,7 +2,7 @@
   "name": "new-file-types-in-split-window",
   "displayName": "New File Types In Split Window",
   "description": "Adds shortcuts to open new file types in a split window",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "lowend",
   "repository": {
     "type": "git",
