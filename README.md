@@ -12,9 +12,9 @@ This is a Visual Studio Code extension that allows you to create new files of sp
 
 1. Install the extension in VS Code
 2. Use the following commands to create new files:
-   * `extension.newArduinoFile` to create a new Arduino file
-   * `extension.newPythonFile` to create a new Python file
-   * `extension.newHtmlFile` to create a new HTML file
+ ctrl+alt+a to create a new Arduino file
+ ctrl+alt+p to create a new Python file
+ ctrl+alt+h to create a new HTML file
 
 ## Requirements
 
